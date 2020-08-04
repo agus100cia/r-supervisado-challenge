@@ -257,6 +257,52 @@ Intentaremos preguntar al modelo si Yo sobreviviría o no en el hundimiento del 
 
 Para ello vamos a crear un dataframe con una fila colocando valores correspondientes a nosotros.
 
+En mi caso creare vectores con mis datos:
+
+- IdPasajero=1000
+- Edad=35
+- Familia en el Titanic=No
+- Número de hijos=0
+- Ticket = TICKET0
+- Costo del ticket=250
+- Cabina=A01
+- Embarque=Queenstown
+- Sexo=Masculino
+- Clase=1
+
+```r 
+vPassengerId=c(1000)
+vAge = c(35)
+vSibSp = c(0)
+vParch = c(0)
+vTicket = c("TICKET0")
+vFare = c(250)
+vCabin = c("A01")
+vEmbarked_C = c(0)
+vEmbarked_Q = c(1)
+vEmbarked_S = c(0)
+vSex = c(1)
+vPclass = c(1)
+yotest <- data.frame(vPassengerId,vAge,vSibSp,vParch,vTicket,vFare,vCabin,vEmbarked_C,vEmbarked_Q,vEmbarked_S,vSex,vPclass)
+library(plyr)
+yo <- rename(yotest, c(
+  "vPassengerId"="PassengerId",
+  "vAge"="Age",
+  "vSibSp"="SibSp",
+  "vParch"="Parch",
+  "vTicket"="Ticket",
+  "vFare"="Fare",
+  "vCabin"="Cabin",
+  "vEmbarked_C"="Embarked_C",
+  "vEmbarked_Q"="Embarked_Q",
+  "vEmbarked_S"="Embarked_S",
+  "vSex"="Sex",
+  "vPclass"="Pclass"
+  ))
+vivo <- predict(RL_titanic,yo)
+View(vivo)
+
+``` 
 
 
 
