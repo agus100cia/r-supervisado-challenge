@@ -85,4 +85,26 @@ dummies_Sex = model.matrix(~Sex_)
 
 ```
 
+- Agregar la dataset las columnas dummies para Sexo y Cabina sin tomar en cuenta "intercept"
+
+```r
+# Agregar una columna Y al dataframe df
+df <- data.frame(df, df$Y)
+
+```
+
+- Reemplazar los valores de la columna Sex por los números generados en dummies
+```r
+## Reemplazar los valores de la columna X por los de la columna Y
+df$X <- df$Y
+
+```
+
+- Crear un archivo CSV llamado titanic_clean.csv con los datos del dataframe limpio
+
+```r
+# Escribir un csv con datos de un dataframe (Se escribe en la carpeta configurada con setwd)
+write.csv(df, "archivo.csv")
+
+```
 
