@@ -251,6 +251,14 @@ Prediction   0   1
                                        
 ``` 
 
+```r
+##Graficar ambas secuencias
+plot(x, sigmoide(x), col="red")
+par(new=TRUE)
+plot(predictions, sigmoide(predictions), col="blue")
+
+```
+
 ![img](https://github.com/agus100cia/r-supervisado-challenge/blob/master/Rplot.png)
 
 ## 4.- Predecir si sobrevivo o no
