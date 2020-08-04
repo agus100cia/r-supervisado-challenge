@@ -65,7 +65,7 @@ df_sin_nulos = na.omit(dataframe)
 
 ```
 
-- Cambiar las variables Sexo y Cabina por variables binarias y numéricas respectivamente
+- Cambiar las variables Sexo y Embarque por variables binarias y numéricas respectivamente
 
 ```r
 ## Usar las variables Dummies (Convierte las opciones de una columna en valores booleanos)
@@ -85,7 +85,7 @@ dummies_Sex = model.matrix(~Sex_)
 
 ```
 
-- Agregar la dataset las columnas dummies para Sexo y Cabina sin tomar en cuenta "intercept"
+- Agregar la dataset las columnas dummies para Sexo y Embarque sin tomar en cuenta "intercept"
 
 ```r
 # Agregar una columna Y al dataframe df
