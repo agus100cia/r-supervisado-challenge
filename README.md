@@ -251,7 +251,9 @@ Prediction   0   1
                                        
 ``` 
 
-## Predecir si sobrevivo o no
+![img](https://github.com/agus100cia/r-supervisado-challenge/blob/master/Rplot.png)
+
+## 4.- Predecir si sobrevivo o no
 
 Intentaremos preguntar al modelo si Yo sobreviviría o no en el hundimiento del Titanic.
 
