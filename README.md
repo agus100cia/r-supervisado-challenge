@@ -251,6 +251,12 @@ Prediction   0   1
                                        
 ``` 
 
+## Predecir si sobrevivo o no
+
+Intentaremos preguntar al modelo si Yo sobreviviría o no en el hundimiento del Titanic.
+
+Para ello vamos a crear un dataframe con una fila colocando valores correspondientes a nosotros.
+
 
 
 
