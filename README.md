@@ -24,5 +24,24 @@ COLUMNAS:
 - Embarked: Lugar de embarque S:Southampton, C:Cambridge, Q:Queenstown
 
 
+## 2.- Depurar el dataset.
+
+Ya que vamos a utilizar una regresión logística para la predicción, necesitamos tener únicamente valores numéricos, por lo tanto debemos eliminar las columnas que no aportan o en su defecto cambiar los valores de las columnas por sus equivalentes en números.
+
+PROCESO:
+
+- Eliminar la columna Cabin
+
+```r
+dataframe$COLUMN <-NULL
+
+## Ejm: Se tiene un dataframe llamado df y se desea eliminar la columna edad
+df$edad<-NULL
+
+``` 
+
+
+
+
 
 
